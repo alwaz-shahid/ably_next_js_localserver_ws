@@ -24,13 +24,13 @@ export default function Home() {
   };
 
   const connectWs = () => {
-    ws.onopen = (event) => {
-      ws.send("Connect");
+   websckt.onopen = (event) => {
+     websckt.send("Connect");
     };
   };
 
   const closeWs = () => {
-    ws.close();
+   websckt.close();
   };
 
   useEffect(() => {
